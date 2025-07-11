@@ -4,12 +4,14 @@ import { FiGithub } from "react-icons/fi";
 
 export const Header = () => {
   return (
-    <header className="grid grid-cols-2 container px-5 pt-5">
+    <header className="grid grid-cols-2 px-10 py-24 md:py-32">
 
-      <div className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold">Hola, Soy Agustin Lorenzatto</h1>
-
-        <p className="text-gray-600">Desarrollador Web Junior apasionado por crear experiencias digitales increíbles. Especializado en React, Next.js y tecnologías modernas.</p>
+      <div className="flex flex-col gap-2 space-y-4">
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold">Hola, Soy Agustin Lorenzatto</h1>
+          <p className="text-gray-600  text-xl">
+            Desarrollador Web Junior apasionado por crear experiencias digitales increíbles. Especializado en React, Next.js y tecnologías modernas.</p>
+        </div>
 
         <div className="flex gap-2">
           <button className="flex items-center gap-2 px-3 py-2 border rounded-lg bg-black text-white hover:bg-black/70 cursor-pointer">
