@@ -1,8 +1,10 @@
-import React from 'react'
 import { NavBar } from '../components/NavBar'
 import { About } from '../components/About'
 import { Header } from '../components/Header'
 import Skill from '../components/Skill'
+import { Project } from '../components/Project'
+import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 
 export const Home = () => {
   return (
@@ -11,6 +13,9 @@ export const Home = () => {
       <Header />
       <About/>
       <Skill/>
+      <Project/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

@@ -13,7 +13,7 @@ export const NavBar = () => {
             <nav className="flex gap-4">
                 <a href="#about" className="cursor-pointer hover:text-gray-400">Sobre Mi</a>
                 <a href="#skill" className="cursor-pointer hover:text-gray-400">Habilidades</a>
-                <a href="#proyecto" className="cursor-pointer hover:text-gray-400">Proyectos</a>
+                <a href="#project" className="cursor-pointer hover:text-gray-400">Proyectos</a>
                 <a href="#contacto" className="cursor-pointer hover:text-gray-400">Contacto</a>
             </nav>
         </div>
