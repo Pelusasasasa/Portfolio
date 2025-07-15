@@ -5,7 +5,7 @@ import { ThemedTitle } from './ThemedTitle'
 
 export const Contact = () => {
   return (
-    <div>
+    <div className='mb-5' id='contact'>
         <ThemedTitle title='¡Trabajemos Juntos!' subTitle='Estoy buscando oportunidades para crecer como desarrollador. ¡No dudes en contactarme!'/>
 
         <div className='mx-auto mt-12 max-w-2xl'>

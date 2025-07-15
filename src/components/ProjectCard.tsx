@@ -1,19 +1,25 @@
+import { useState } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { ModalImagen } from "./ModalImagen";
 
 interface Props {
     titulo: string;
     descripcion: string;
     tecnologias: string[];
     github: string;
-    demo: boolean
-
+    demo?: boolean;
+    img?: string;
 };
 
-export const ProjectCard = ({titulo, descripcion, tecnologias, github, demo}: Props) => {
+export const ProjectCard = ({titulo, img = '/src/assets/placeholder.svg' , descripcion, tecnologias, github, demo}: Props) => {
+
+    const [modalImagen, setModalImagen] = useState<boolean>(false);
+
   return (
     <div className="border border-gray-300 rounded-lg">
+        {modalImagen && <ModalImagen src={img} setModal={setModalImagen}/>}
         <div className="w-full aspect-video">
-            <img src="/src/assets/placeholder.svg" alt="" className="w-full h-64 object-cover"/>
+            <img src={img} alt="" onClick={() => setModalImagen(true)} className="w-full h-64 object-cover cursor-pointer"/>
         </div>
 
         <div className="p-5">

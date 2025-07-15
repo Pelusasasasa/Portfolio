@@ -14,7 +14,7 @@ export const NavBar = () => {
                 <a href="#about" className="cursor-pointer hover:text-gray-400">Sobre Mi</a>
                 <a href="#skill" className="cursor-pointer hover:text-gray-400">Habilidades</a>
                 <a href="#project" className="cursor-pointer hover:text-gray-400">Proyectos</a>
-                <a href="#contacto" className="cursor-pointer hover:text-gray-400">Contacto</a>
+                <a href="#contact" className="cursor-pointer hover:text-gray-400">Contacto</a>
             </nav>
         </div>
 
