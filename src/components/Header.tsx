@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 
 export const Header = () => {
   return (
-    <header className="grid grid-cols-2 px-10 py-24 md:py-32">
+    <header className="grid grid-cols-1 md:grid-cols-2 px-10 py-24 md:py-24">
 
       <div className="flex flex-col gap-2 space-y-4">
         <div className="space-y-2">

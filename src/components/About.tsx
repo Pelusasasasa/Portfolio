@@ -7,7 +7,7 @@ import { ThemedTitle } from "./ThemedTitle";
 
 export const About = () => {
   return (
-    <section className="py-24" id="about">
+    <section className="py-10" id="about">
       
       <ThemedTitle title="Sobre Mi" subTitle="Soy un desarrollador web junior con una gran pasion por la tecnologia y el aprendizaje continuo."/>
 
