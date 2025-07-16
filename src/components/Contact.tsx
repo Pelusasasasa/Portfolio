@@ -9,9 +9,9 @@ export const Contact = () => {
         <ThemedTitle title='¡Trabajemos Juntos!' subTitle='Estoy buscando oportunidades para crecer como desarrollador. ¡No dudes en contactarme!'/>
 
         <div className='mx-auto mt-12 max-w-2xl'>
-        
             <div className='border border-gray-300 rounded-lg'>
-                <div className='flex gap-5 p-5 border-b border-gray-300 mx-5 '>
+
+                <div className='flex gap-5 p-5 border-b border-gray-300 mx-5 flex-col md:flex-row'>
                     <div>
                         <h3 className='text-xl font-semibold'>Informacion de Contacto</h3>
                         <div className='flex gap-2 items-center mt-5'>
@@ -42,7 +42,6 @@ export const Contact = () => {
                     </button>
                 </div>
             </div>
-
         </div>
 
     </div>

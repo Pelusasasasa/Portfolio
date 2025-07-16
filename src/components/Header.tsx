@@ -42,7 +42,7 @@ export const Header = () => {
       <div className="flex justify-center ">
         <div className="relative">
           <div className="w-64 h-64 rounded-full bg-gradient-to-br flex justify-center items-center">
-            <img src="/src/assets/Me.jpeg" alt="Imagen" className="rounded-full" />
+            <img src="/assets/Me.jpeg" alt="Imagen" className="rounded-full" />
           </div>
         </div>
       </div>
