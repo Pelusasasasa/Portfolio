@@ -8,7 +8,7 @@ import { Footer } from '../components/Footer'
 
 export const Home = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full bg-[#f4f4f580]'>
       <NavBar/>
       <Header />
       <About/>

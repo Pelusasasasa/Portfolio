@@ -26,7 +26,7 @@ return (
         </div>
         <div className="flex bg-black rounded-lg mx-auto mt-5 mb-5 px-10 py-2 gap-5 items-center hover:opacity-70 hover:cursor-pointer">
             <BsDownload className="text-white hover:cursor-pointer" size={20}/>
-            <button className="text-white hover:cursor-pointer">Descargar CV</button>
+            <a download href='/CV_Agustin_Lorenzatto.pdf' className="text-white hover:cursor-pointer">Descargar CV</a>
         </div>
 
         <div className='px-5'>

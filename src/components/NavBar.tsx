@@ -33,10 +33,10 @@ export const NavBar = () => {
             {menuHambur && <MenuHambur setMenuHambur={setMenuHambur}/>}
         </div>
 
-        <button className="items-center md:flex hidden gap-5 border border-gray-300 px-2 py-1 rounded-sm hover:bg-gray-200 cursor-pointer">
+        <a href="/CV_Agustin_Lorenzatto.pdf" download className="items-center md:flex hidden gap-5 border border-gray-300 px-2 py-1 rounded-sm hover:bg-gray-200 cursor-pointer">
             <BsDownload/>
             <p>CV</p>
-        </button>
+        </a>
     </div>
   )
 }
