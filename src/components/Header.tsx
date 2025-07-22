@@ -16,7 +16,7 @@ export const Header = () => {
         <div className="flex gap-2">
           <button className="flex items-center gap-2 px-3 py-2 border rounded-lg bg-black text-white hover:bg-black/70 cursor-pointer">
             <CiMail size={20}/>
-            <a href="#contact">Contactame</a>
+            <a href="mailto:agustinlorenzatto@outlook.com">Contactame</a>
           </button>
 
           <button className="flex items-center gap-2 px-3 py-2 border rounded-lg border-gray-300 hover:bg-gray-300/70 cursor-pointer">
