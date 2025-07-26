@@ -7,16 +7,16 @@ interface Props {
     descripcion: string;
     tecnologias: string[];
     github: string;
-    demo?: boolean;
+    demo?: string;
     img?: string;
 };
 
 export const ProjectCard = ({titulo, img = '/assets/placeholder.svg' , descripcion, tecnologias, github, demo}: Props) => {
-
+    console.log(github)
     const [modalImagen, setModalImagen] = useState<boolean>(false);
 
   return (
-    <div className="border border-gray-300 rounded-lg">
+    <div className="border border-gray-300 rounded-lg flex flex-col">
         {modalImagen && <ModalImagen src={img} setModal={setModalImagen}/>}
         <div className="w-full aspect-video">
             <img src={img} alt="" onClick={() => setModalImagen(true)} className="w-full h-64 object-cover cursor-pointer"/>
@@ -34,17 +34,17 @@ export const ProjectCard = ({titulo, img = '/assets/placeholder.svg' , descripci
             ))}
         </div>
 
-        <div className="flex gap-2 mx-auto my-5 p-5 ">
+        <div className="flex gap-2 my-5 p-5  mt-auto">
             <button className="cursor-pointer py-1  border border-gray-300 hover:bg-gray-300/50 flex gap-5 rounded-lg items-center px-2">
                 <FiGithub/>
-                <a href={github} className="font-semibold">Codigo</a>
+                <a href={github} target="_blank" className="font-semibold">Codigo</a>
             </button>
 
             {
                 demo && (
                     <button className="cursor-pointer py-1 border bg-black hover:bg-black/85 flex gap-5 items-center px-2 rounded-lg">
                         <FiExternalLink className="text-white"/>
-                        <p className="text-white">Demo</p>
+                        <a href={demo} target="_blank" className="text-white">Demo</a>
                     </button>
                 )
             }
