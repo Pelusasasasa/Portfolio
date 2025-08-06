@@ -12,7 +12,6 @@ interface Props {
 };
 
 export const ProjectCard = ({titulo, img = '/assets/placeholder.svg' , descripcion, tecnologias, github, demo}: Props) => {
-    console.log(github)
     const [modalImagen, setModalImagen] = useState<boolean>(false);
 
   return (
